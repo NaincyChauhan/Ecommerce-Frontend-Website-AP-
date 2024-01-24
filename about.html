@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="home">
+    <div class="page-wrapper">
+        <header>
+            <div class="sub-header">
+                <div class="welcome-text">
+                    WELCOME TO MY STORE MESSAGE OR REMOVE IT!
+                </div>
+                <div class="link-header">
+                    <ul class="link-list">
+                        <li><a href="./order.html">Order</a></li>
+                        <li>Contact Us</li>
+                        <li>My Account</li>
+                        <li>
+                            <span>
+                                <i class="fa-regular fa-user font-13"></i>
+                                <a href="">Sign In /</a>
+                                <a href="">Register</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/images/logo.png" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cart.html">Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./checkout.html">Checkout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./category.html">Category</a>
+                            </li>
+
+                        </ul>
+                        <div class="d-flex">
+                            <div class="d-flex telephone-area">
+                                <div class="telephone">
+                                    <i class="fa-solid fa-phone nav-icon"></i>
+                                </div>
+                                <div>
+                                    <p class="pb-0 mb-0 text"> <span>Live Chat</span> <span>or:</span></p>
+                                    <p class="pb-0 mb-0 telephone-number">+(91) 9865334578</p>
+                                </div>
+                            </div>
+                            <div class="d-flex label-area">
+                                <div class="nav-label">
+                                    <p class="pb-0 mb-0"><i class="fa-solid fa-heart nav-icon"></i></p>
+                                    <p class="nav-icon-text mb-0"> Whilist</p>
+                                </div>
+                                <div class="nav-label">
+                                    <p class="pb-0 mb-0"><i class="fa-solid fa-scale-balanced nav-icon"></i></p>
+                                    <p class="nav-icon-text mb-0"> Compare</p>
+                                </div>
+                                <div class="nav-label cart-label" id="cartLabel">
+
+                                    <a href="./cart.html">
+                                        <p class="pb-0 mb-0"><i class="fa-solid fa-cart-shopping nav-icon"></i>
+                                            <span class="cart-number">2</span>
+                                        </p>
+                                    </a>
+                                    <p class="nav-icon-text mb-0"> Cart</p>
+                                    <div class="cart-dropdown" id="cartDropdown">
+                                        <!-- Cart items go here -->
+                                        <div class="cart-item">
+                                            <p>Makeup Brush <br> <small>Price: $300</small></p>
+                                            <img class="border" src="./assets/images/cart/product-1.jpg" alt="Item 1">
+                                        </div>
+                                        <div class="cart-item">
+                                            <p>Pressure Cooker <br> <small>Price: $260</small></p>
+                                            <img class="border" src="./assets/images/cart/product-2.jpg" alt="Item 2">
+                                        </div>
+
+                                        <div class="my-3">
+                                            <a href="./cart.html" class="btn btn-dark w-100 shadow-0 mb-2 d-btn cart-button">
+                                                Go To Cart <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main">
+            <section>
+                <div class="page-header">
+                    <h5 class="text-center"><b>About Us</b></h5>
+                </div>
+            </section>
+            <!-- Content Start -->
+            <div class="container-fluid mb-4 mt-4">
+                <!-- Category section start -->
+                <!-- About 1 - Bootstrap Brain Component -->
+                <section class="py-3 py-md-5 py-xl-8">
+                    <div class="container">
+                        <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+                            <div class="col-12 col-lg-6 col-xl-5">
+                                <img class="img-fluid rounded" loading="lazy" src="./assets/images/about.jpg" alt="">
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-7">
+                                <div class="row justify-content-xl-center">
+                                    <div class="col-12 col-xl-11">
+                                        <h4><b>Who Are We?</b></h4>
+                                        <p class="lead text-secondary mb-3 font-14">We help people to build
+                                            incredible brands and superior products. Our perspective is to
+                                            furnish outstanding captivating services.</p>
+                                        <p class="mb-5" style="font-size: 15px;">Nullam gravida orci ac luctus molestie.
+                                            Fusce finibus
+                                            congue erat, non aliquam magna tincidunt at. Aenean lacinia arcu ex,
+                                            sed pharetra nibh porta a. Curabitur vel consequat nibh, ac interdum
+                                            nisl. Nunc pulvinar nec massa vitae sollicitudin.</p>
+                                        <div class="row gy-4 gy-md-0 gx-xxl-5X">
+                                            <div class="col-12 col-md-6">
+                                                <div class="d-flex">
+                                                    <div class="me-4 text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                            fill="currentColor" class="bi bi-gear-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <h6><b>Versatile Brand</b></h6>
+                                                        <p class="text-secondary mb-0 font-13">We are crafting a
+                                                            digital
+                                                            method that subsists life across all mediums.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="d-flex">
+                                                    <div class="me-4 text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                            fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div>
+                                                        <h6><b>Digital Agency</b></h6>
+                                                        <p class="text-secondary mb-0 font-13">We believe in
+                                                            innovation
+                                                            by merging primary with elaborate ideas.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Category section end -->
+
+            </div>
+            <!-- Content End -->
+
+            <!-- Feature Section  Start-->
+            <section class="mt-5 feature-container" style="background-color: #f5f5f5;">
+                <div class="container text-dark pt-3">
+                    <header class="pt-4 pb-3">
+                        <h4 class="feature-heading">Why choose us</h4>
+                    </header>
+
+                    <div class="row mb-4">
+                        <div class="col-lg-4 col-md-6 f-section">
+                            <figure class="d-flex align-items-center mb-4">
+                                <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+                                    <i class="fas fa-camera-retro text-primary floating"></i>
+                                </span>
+                                <figcaption class="info">
+                                    <h6 class="title">Reasonable prices</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-6 f-section">
+                            <figure class="d-flex align-items-center mb-4">
+                                <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+                                    <i class="fas fa-star text-primary floating"></i>
+                                </span>
+                                <figcaption class="info">
+                                    <h6 class="title">Best quality</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-6 f-section">
+                            <figure class="d-flex align-items-center mb-4">
+                                <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+                                    <i class="fas fa-plane text-primary floating"></i>
+                                </span>
+                                <figcaption class="info">
+                                    <h6 class="title">Worldwide shipping</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-6 f-section">
+                            <figure class="d-flex align-items-center mb-4">
+                                <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+                                    <i class="fas fa-users text-primary floating"></i>
+                                </span>
+                                <figcaption class="info">
+                                    <h6 class="title">Customer satisfaction</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-6 f-section">
+                            <figure class="d-flex align-items-center mb-4">
+                                <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+                                    <i class="fas fa-thumbs-up text-primary floating"></i>
+                                </span>
+                                <figcaption class="info">
+                                    <h6 class="title">Happy customers</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-lg-4 col-md-6 f-section">
+                            <figure class="d-flex align-items-center mb-4">
+                                <span class="rounded-circle bg-white p-3 d-flex me-2 mb-2">
+                                    <i class="fas fa-box text-primary floating"></i>
+                                </span>
+                                <figcaption class="info">
+                                    <h6 class="title">Thousand items</h6>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmor</p>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <!-- container end.// -->
+            </section>
+            <!-- Feature Section End-->
+
+            <section class="home-testimonial">
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-center testimonial-pos">
+                        <div class="col-md-12 pt-4 d-flex justify-content-center">
+                            <h3>Testimonials</h3>
+                        </div>
+                        <div class="col-md-12 d-flex justify-content-center">
+                            <h2>Explore the students experience</h2>
+                        </div>
+                    </div>
+                    <section class="home-testimonial-bottom">
+                        <div class="container testimonial-inner">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-4 style-3">
+                                    <div class="tour-item ">
+                                        <div class="tour-desc bg-white">
+                                            <div class="tour-text color-grey-3 text-center">&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi animi quod vero obcaecati quos perferendis necessitatibus earum numquam harum.&rdquo;</div>
+                                            <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
+                                                    src="https://images.pexels.com/photos/6625914/pexels-photo-6625914.jpeg"
+                                                    alt=""></div>
+                                            <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
+                                            <div class="link-position d-flex justify-content-center">Student</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 style-3">
+                                    <div class="tour-item ">
+                                        <div class="tour-desc bg-white">
+                                            <div class="tour-text color-grey-3 text-center">&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi animi quod vero obcaecati quos perferendis necessitatibus earum numquam harum.&rdquo;</div>
+                                            <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
+                                                    src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                                    alt=""></div>
+                                            <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
+                                            <div class="link-position d-flex justify-content-center">Student</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 style-3">
+                                    <div class="tour-item ">
+                                        <div class="tour-desc bg-white">
+                                            <div class="tour-text color-grey-3 text-center">&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia commodi animi quod vero obcaecati quos perferendis necessitatibus earum numquam harum.&rdquo;</div>
+                                            <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people"
+                                                    src="https://images.pexels.com/photos/4946604/pexels-photo-4946604.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                                    alt=""></div>
+                                            <div class="link-name d-flex justify-content-center">Balbir Kaur</div>
+                                            <div class="link-position d-flex justify-content-center">Student</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </section>
+            </section>
+        </div>
+
+        <!-- Footer Section Start -->
+        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <footer class="main-footer text-center text-lg-start text-PBlack">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4 footer-header">
+                <!-- Left -->
+                <div class="me-5">
+                    <span class="footer-title">Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-facebook footer-icon"></i> -->
+                        <i class="fa-brands fa-square-facebook footer-icon"></i>
+                    </a>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-twitter footer-icon"></i> -->
+                        <i class="fa-brands fa-square-x-twitter footer-icon"></i>
+                    </a>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-google footer-icon"></i> -->
+                        <i class="fa-solid fa-envelope footer-icon"></i>
+                    </a>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-instagram footer-icon"></i> -->
+                        <i class="fa-brands fa-square-instagram footer-icon"></i>
+                    </a>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-linkedin footer-icon"></i> -->
+                        <i class="fa-brands fa-linkedin footer-icon"></i>
+                    </a>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-github footer-icon"></i> -->
+                        <i class="fa-brands fa-square-github footer-icon"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="footer-section">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <a class="footer-logo" href="#"><img class="logo" src="./assets/images/logo.png" /></a>
+                            <p>
+                                Here you can use rows and columns to organize your footer
+                                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold f-link-h mb-4"><a style="color: inherit;" href="./products.html">Products</a></h6>
+                            <p>
+                                <a href="./category.html" class="text-PBlack">Category</a>
+                            </p>
+                            <p>
+                                <a href="./cart.html" class="text-PBlack">Cart</a>
+                            </p>
+                            <p>
+                                <a href="./checkout.html" class="text-PBlack">Checkout</a>
+                            </p>
+                            <p>
+                                <a href="./detail.html" class="text-PBlack">Detail</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold f-link-h mb-4">Useful links</h6>
+                            <p>
+                                <a href="./detail.html" class="text-PBlack">Detail</a>
+                            </p>
+                            <p>
+                                <a href="./about.html" class="text-PBlack">About</a>
+                            </p>
+                            <p>
+                                <a href="./contact.html" class="text-PBlack">Contact</a>
+                            </p>
+                            <p>
+                                <a href="./order.html" class="text-PBlack">Order Success</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 p-0">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold f-link-h mb-4">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                            <p><i class="fas fa-envelope mr-3"></i> contact.naincychauhan@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="p-4 footer-footer">
+                <div>
+                    Copyright © 2023 My Store. All Rights Reserved.:
+                    <a class="text-PBlack" href="">Naincy Chauhan</a>
+                </div>
+                <div>
+                    We're using safe payment for
+                    <img src="./assets/images/payment.PNG" alt="">
+                </div>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>

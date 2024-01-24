@@ -1,0 +1,1152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="home">
+    <div class="page-wrapper">
+        <header>
+            <div class="sub-header">
+                <div class="welcome-text">
+                    WELCOME TO MY STORE MESSAGE OR REMOVE IT!
+                </div>
+                <div class="link-header">
+                    <ul class="link-list">
+                        <li><a href="./order.html">Order</a></li>
+                        <li>Contact Us</li>
+                        <li>My Account</li>
+                        <li>
+                            <span>
+                                <i class="fa-regular fa-user font-13"></i>
+                                <a href="">Sign In /</a>
+                                <a href="">Register</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/images/logo.png" /></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/products.html">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cart.html">Cart</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./checkout.html">Checkout</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./category.html">Category</a>
+                            </li>
+
+                        </ul>
+                        <div class="d-flex">
+                            <div class="d-flex telephone-area">
+                                <div class="telephone">
+                                    <i class="fa-solid fa-phone nav-icon"></i>
+                                </div>
+                                <div>
+                                    <p class="pb-0 mb-0 text"> <span>Live Chat</span> <span>or:</span></p>
+                                    <p class="pb-0 mb-0 telephone-number">+(91) 9865334578</p>
+                                </div>
+                            </div>
+                            <div class="d-flex label-area">
+                                <div class="nav-label">
+                                    <p class="pb-0 mb-0"><i class="fa-solid fa-heart nav-icon"></i></p>
+                                    <p class="nav-icon-text mb-0"> Whilist</p>
+                                </div>
+                                <div class="nav-label">
+                                    <p class="pb-0 mb-0"><i class="fa-solid fa-scale-balanced nav-icon"></i></p>
+                                    <p class="nav-icon-text mb-0"> Compare</p>
+                                </div>
+                                <div class="nav-label cart-label" id="cartLabel">
+
+                                    <a href="./cart.html">
+                                        <p class="pb-0 mb-0"><i class="fa-solid fa-cart-shopping nav-icon"></i>
+                                            <span class="cart-number">2</span>
+                                        </p>
+                                    </a>
+                                    <p class="nav-icon-text mb-0"> Cart</p>
+                                    <div class="cart-dropdown" id="cartDropdown">
+                                        <!-- Cart items go here -->
+                                        <div class="cart-item">
+                                            <p>Makeup Brush <br> <small>Price: $300</small></p>
+                                            <img class="border" src="./assets/images/cart/product-1.jpg" alt="Item 1">
+                                        </div>
+                                        <div class="cart-item">
+                                            <p>Pressure Cooker <br> <small>Price: $260</small></p>
+                                            <img class="border" src="./assets/images/cart/product-2.jpg" alt="Item 2">
+                                        </div>
+
+                                        <div class="my-3">
+                                            <a href="./cart.html" class="btn btn-dark w-100 shadow-0 mb-2 d-btn cart-button">
+                                                Go To Cart <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main">
+            <!-- Content Start -->
+            <div class="container-fluid mb-4 mt-4">
+                <!-- Nav Link Start -->
+                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                    aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </nav>
+                <!-- Nav Link End -->
+                <!-- Banner Section Start -->
+                <section>
+                    <div class="row category-products">
+                        <div class="category-row">
+                            <div class="category-banner">
+                                <div class="banner-info">
+                                    <p class="sub-title">Flash Sale 50% OFF</p>
+                                    <p class="title">Fashion Figure Skate Sale</p>
+                                    <p class="desc">Only until the end of this week.</p>
+                                    <button type="button" class="btn btn-outline-primary banner-button">SHOP NOW <i
+                                            class="fa-solid fa-arrow-right b-b-i"></i></button>
+                                </div>
+                                <img class="w-100 product-listing-banner" src="./assets/images/slides/banner1.jpg"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Banner Section End -->
+
+                <!-- Category Section Start -->
+                <section class="product-listing-category">
+                    <div class="container mb-5">
+                        <nav class="row gy-4">
+                            <div class="col-lg-6 col-md-12">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-couch"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Interior items</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-basketball-ball"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Sport and travel</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-ring"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Jewellery</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-clock"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Accessories</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-car-side"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Automobiles</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-home"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Home items</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-guitar"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Musical items</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-book"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Book, reading</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-baby-carriage"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Kid's toys</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-paw"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Pet items</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-tshirt"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Men's clothing</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-shoe-prints"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Footwear</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-mobile"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Smartphones</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-tools"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Tools</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-pencil-ruler"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Education</div>
+                                        </a>
+                                    </div>
+                                    <div class="col-3">
+                                        <a href="#" class="text-center d-flex flex-column justify-content-center">
+                                            <button type="button"
+                                                class="btn btn-outline-secondary mx-auto category-button mb-2"
+                                                data-mdb-ripple-color="dark">
+                                                <i class="fas fa-warehouse"></i>
+                                            </button>
+                                            <div class="text-dark category-title">Other items</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+                <!-- Category Sectio End -->
+
+                <!-- sidebar + content -->
+                <section class="product-listing">
+                    <div class="container">
+                        <div class="row">
+                            <!-- sidebar -->
+                            <div class="col-lg-3">
+                                <div>
+                                    <h6><b>Filters:</b> <small class="float-right">Clear All</small></h6>
+                                </div>
+                                <div class="accordion" id="accordionPanelsStayOpenExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseSearch" aria-expanded="true"
+                                                aria-controls="panelsStayOpen-collapseSearch">
+                                                Search
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseSearch" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <form class="default-form mt-3">
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control border mb-2" name=""
+                                                                placeholder="Enter Query" />
+                                                                <button type="submit" class="btn btn-dark w-100 shadow-0 mb-2 d-btn search-button">SEARCH</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                                aria-controls="panelsStayOpen-collapseOne">
+                                                Categories
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled">
+                                                    <li><a href="#" class="text-dark">Electronics </a></li>
+                                                    <li><a href="#" class="text-dark">Home items </a></li>
+                                                    <li><a href="#" class="text-dark">Books, Magazines </a></li>
+                                                    <li><a href="#" class="text-dark">Men's clothing </a></li>
+                                                    <li><a href="#" class="text-dark">Interiors items </a></li>
+                                                    <li><a href="#" class="text-dark">Underwears </a></li>
+                                                    <li><a href="#" class="text-dark">Shoes for men </a></li>
+                                                    <li><a href="#" class="text-dark">Accessories </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                                aria-controls="panelsStayOpen-collapseTwo">
+                                                Brands
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <div>
+                                                    <!-- Checked checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckChecked1" checked />
+                                                        <label class="form-check-label"
+                                                            for="flexCheckChecked1">Mercedes</label>
+                                                        <span class="badge badge-secondary float-end">120</span>
+                                                    </div>
+                                                    <!-- Checked checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckChecked2" checked />
+                                                        <label class="form-check-label"
+                                                            for="flexCheckChecked2">Toyota</label>
+                                                        <span class="badge badge-secondary float-end">15</span>
+                                                    </div>
+                                                    <!-- Checked checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckChecked3" checked />
+                                                        <label class="form-check-label"
+                                                            for="flexCheckChecked3">Mitsubishi</label>
+                                                        <span class="badge badge-secondary float-end">35</span>
+                                                    </div>
+                                                    <!-- Checked checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckChecked4" checked />
+                                                        <label class="form-check-label"
+                                                            for="flexCheckChecked4">Nissan</label>
+                                                        <span class="badge badge-secondary float-end">89</span>
+                                                    </div>
+                                                    <!-- Default checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault" />
+                                                        <label class="form-check-label"
+                                                            for="flexCheckDefault">Honda</label>
+                                                        <span class="badge badge-secondary float-end">30</span>
+                                                    </div>
+                                                    <!-- Default checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault" />
+                                                        <label class="form-check-label"
+                                                            for="flexCheckDefault">Suzuki</label>
+                                                        <span class="badge badge-secondary float-end">30</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                                aria-controls="panelsStayOpen-collapseThree">
+                                                Price
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <div class="range">
+                                                    <input type="range" class="form-range" id="customRange1" />
+                                                </div>
+                                                <div class="row mb-3 range-form">
+                                                    <div class="col-6">
+                                                        <p class="mb-0">
+                                                            Min
+                                                        </p>
+                                                        <div class="form-outline">
+                                                            <input placeholder="$min" type="number" id="typeNumber"
+                                                                class="form-control" />
+                                                            <label class="form-label" for="typeNumber">$0</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <p class="mb-0">
+                                                            Max
+                                                        </p>
+                                                        <div class="form-outline">
+                                                            <input placeholder="$max" type="number" id="typeNumber"
+                                                                class="form-control" />
+                                                            <label class="form-label" for="typeNumber">$1,0000</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button type="button"
+                                                    class="btn btn-white w-100 border border-secondary price-range-button">APPLY</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                                aria-controls="panelsStayOpen-collapseFour">
+                                                Size
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <div>
+                                                    <!-- Checked checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckCheckedSize1" checked />
+                                                        <label class="form-check-label"
+                                                            for="flexCheckCheckedSize1">Extra Large</label>
+                                                    </div>
+                                                    <!-- Checked checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckCheckedSize2" checked />
+                                                        <label class="form-check-label"
+                                                            for="flexCheckCheckedSize2">Large</label>
+                                                    </div>
+                                                    <!-- Checked checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckCheckedSize3" checked />
+                                                        <label class="form-check-label"
+                                                            for="flexCheckCheckedSize3">Medium</label>
+                                                    </div>
+                                                    <!-- Checked checkbox -->
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckCheckedSize4" checked />
+                                                        <label class="form-check-label"
+                                                            for="flexCheckCheckedSize4">Small</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+                                                aria-controls="panelsStayOpen-collapseFive">
+                                                Ratings
+                                            </button>
+                                        </h2>
+                                        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <!-- Default checkbox -->
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault" checked />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        <i class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-warning"></i>
+                                                        <i class="fas fa-star text-warning"></i>
+                                                    </label>
+                                                </div>
+                                                <!-- Default checkbox -->
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault" checked />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        <i class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-warning"></i>
+                                                        <i class="fas fa-star text-secondary"></i>
+                                                    </label>
+                                                </div>
+                                                <!-- Default checkbox -->
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault" checked />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        <i class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-secondary"></i>
+                                                        <i class="fas fa-star text-secondary"></i>
+                                                    </label>
+                                                </div>
+                                                <!-- Default checkbox -->
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckDefault" checked />
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        <i class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-warning"></i><i
+                                                            class="fas fa-star text-secondary"></i><i
+                                                            class="fas fa-star text-secondary"></i>
+                                                        <i class="fas fa-star text-secondary"></i>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- sidebar -->
+                            <!-- content -->
+                            <div class="col-lg-9">
+                                <header class="d-sm-flex align-items-center border-bottom mb-4 pb-3 products-header">
+                                    <strong class="d-block py-2"> <small>32 Items found</small> </strong>
+                                    <div class="ms-auto">
+                                        <select class="form-select d-inline-block w-auto border pt-1">
+                                            <option value="0">Best match</option>
+                                            <option value="1">Recommended</option>
+                                            <option value="2">High rated</option>
+                                            <option value="3">Randomly</option>
+                                        </select>
+                                        <div class="btn-group shadow-0 layout-style">
+                                            <a href="#" class="btn btn-light" title="List view">
+                                                <i class="fa fa-bars fa-lg"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-light active" title="Grid view">
+                                                <i class="fa fa-th fa-lg" style="color: #333333;;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </header>
+
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/1-1-1.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/1-1-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Women's Blouse Top</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="far fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (4 Reviews)</span>
+                                                </span>
+                                                <div class="price">$85.55 <del class="old-price">$110</del> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/1-2.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/1-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Women's Bag</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (20 Reviews)</span>
+                                                </span>
+                                                <div class="price">$45.55 <del class="old-price">$80</del> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/1-4.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/1-4.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Advance Flashlight</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="far fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (52 Reviews)</span>
+                                                </span>
+                                                <div class="price">$90.55 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/4-1-1.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/4-1-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Brown Leather Shoes</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="far fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (4 Reviews)</span>
+                                                </span>
+                                                <div class="price">$111.55 <del class="old-price">$210</del> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/3-1-1.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/3-1-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Women's Blouse Top</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="far fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (4 Reviews)</span>
+                                                </span>
+                                                <div class="price">$85.55 <del class="old-price">$110</del> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/3-2-1.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/3-2-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Women's Bag</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (20 Reviews)</span>
+                                                </span>
+                                                <div class="price">$45.55 <del class="old-price">$80</del> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/3-3-1.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/3-3-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Advance Flashlight</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="far fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (52 Reviews)</span>
+                                                </span>
+                                                <div class="price">$90.55 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/3-4-1.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/3-4-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Brown Leather Shoes</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="far fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (4 Reviews)</span>
+                                                </span>
+                                                <div class="price">$111.55 <del class="old-price">$210</del> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/3-6-1.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/3-6-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Women's Blouse Top</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="far fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (4 Reviews)</span>
+                                                </span>
+                                                <div class="price">$85.55 <del class="old-price">$110</del> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/3-7-1.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/3-7-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Women's Bag</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (20 Reviews)</span>
+                                                </span>
+                                                <div class="price">$45.55 <del class="old-price">$80</del> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/4-1-1.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/4-1-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Advance Flashlight</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="far fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (52 Reviews)</span>
+                                                </span>
+                                                <div class="price">$90.55 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6">
+                                        <div class="product-grid">
+                                            <div class="product-image">
+                                                <a href="/detail.html" class="image">
+                                                    <img class="pic-1" src="./assets/images/products/5-1-1.jpg">
+                                                    <img class="pic-2" src="./assets/images/products/5-1-2.jpg">
+                                                </a>
+                                                <ul class="product-links">
+                                                    <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                                                    <li><a href="#"><i class="far fa-heart"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
+                                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="product-content">
+                                                <h3 class="title"><a href="/detail.html">Latest 1</a></h3>
+                                                <span class="d-flex product-review">
+                                                    <ul class="rating">
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="fa fa-star"></li>
+                                                        <li class="far fa-star"></li>
+                                                    </ul>
+                                                    <span class="rating-reviews"> (4 Reviews)</span>
+                                                </span>
+                                                <div class="price">$111.55 <del class="old-price">$210</del> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Pagination -->
+                                <nav aria-label="Page navigation example" class="d-flex justify-content-center mt-3">
+                                    <ul
+                                        class="pagination d-flex justify-content-center flex-wrap pagination-flat pagination-success">
+                                        <li class="page-item"><a class="page-link" href="#" data-abc="true"><i
+                                                    class="fa fa-angle-left"></i></a></li>
+                                        <li class="page-item active"><a class="page-link" href="#" data-abc="true">1</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#" data-abc="true">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#" data-abc="true">3</a></li>
+                                        <li class="page-item"><a class="page-link" href="#" data-abc="true">4</a></li>
+                                        <li class="page-item"><a class="page-link" href="#" data-abc="true"><i
+                                                    class="fa fa-angle-right"></i></a></li>
+                                    </ul>
+                                </nav>
+                                <!-- Pagination -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- sidebar + content -->
+            </div>
+            <!-- Content End -->
+        </div>
+
+        <!-- Footer Section Start -->
+        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <footer class="main-footer text-center text-lg-start text-PBlack">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-between p-4 footer-header">
+                <!-- Left -->
+                <div class="me-5">
+                    <span class="footer-title">Get connected with us on social networks:</span>
+                </div>
+                <!-- Left -->
+
+                <!-- Right -->
+                <div>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-facebook footer-icon"></i> -->
+                        <i class="fa-brands fa-square-facebook footer-icon"></i>
+                    </a>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-twitter footer-icon"></i> -->
+                        <i class="fa-brands fa-square-x-twitter footer-icon"></i>
+                    </a>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-google footer-icon"></i> -->
+                        <i class="fa-solid fa-envelope footer-icon"></i>
+                    </a>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-instagram footer-icon"></i> -->
+                        <i class="fa-brands fa-square-instagram footer-icon"></i>
+                    </a>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-linkedin footer-icon"></i> -->
+                        <i class="fa-brands fa-linkedin footer-icon"></i>
+                    </a>
+                    <a href="" class="text-PBlack me-4">
+                        <!-- <i class="fab fa-github footer-icon"></i> -->
+                        <i class="fa-brands fa-square-github footer-icon"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="footer-section">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                            <!-- Content -->
+                            <a class="footer-logo" href="#"><img class="logo" src="./assets/images/logo.png" /></a>
+                            <p>
+                                Here you can use rows and columns to organize your footer
+                                content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold f-link-h mb-4"><a style="color: inherit;" href="./products.html">Products</a></h6>
+                            <p>
+                                <a href="./category.html" class="text-PBlack">Category</a>
+                            </p>
+                            <p>
+                                <a href="./cart.html" class="text-PBlack">Cart</a>
+                            </p>
+                            <p>
+                                <a href="./checkout.html" class="text-PBlack">Checkout</a>
+                            </p>
+                            <p>
+                                <a href="./detail.html" class="text-PBlack">Detail</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold f-link-h mb-4">Useful links</h6>
+                            <p>
+                                <a href="./detail.html" class="text-PBlack">Detail</a>
+                            </p>
+                            <p>
+                                <a href="./about.html" class="text-PBlack">About</a>
+                            </p>
+                            <p>
+                                <a href="./contact.html" class="text-PBlack">Contact</a>
+                            </p>
+                            <p>
+                                <a href="./order.html" class="text-PBlack">Order Success</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 p-0">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold f-link-h mb-4">Contact</h6>
+                            <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                            <p><i class="fas fa-envelope mr-3"></i> contact.naincychauhan@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="p-4 footer-footer">
+                <div>
+                    Copyright © 2023 My Store. All Rights Reserved.:
+                    <a class="text-PBlack" href="">Naincy Chauhan</a>
+                </div>
+                <div>
+                    We're using safe payment for
+                    <img src="./assets/images/payment.PNG" alt="">
+                </div>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
